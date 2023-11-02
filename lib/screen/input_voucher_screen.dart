@@ -373,6 +373,7 @@ class _InputVoucherScreenState extends ConsumerState<InputVoucherScreen> {
                       context: context,
                       agree: () {
                         simpanVoucher();
+                        context.pop();
                       },
                       denied: () {
                         context.pop();

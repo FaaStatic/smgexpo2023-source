@@ -1144,6 +1144,7 @@ class _InputTransaksiScreenState extends ConsumerState<InputTransaksiScreen>
                             context: context,
                             agree: () {
                               simpanTransaksi();
+                              context.pop();
                             },
                             denied: () {
                               context.pop();
